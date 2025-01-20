@@ -23,9 +23,13 @@ public class LinkedListMain {
         System.out.println("LL after remove() of first node:");
         myLinkedList.printList();
 
-       System.out.println("\nRemoved node:");
+        System.out.println("\nRemoved node:");
         System.out.println(myLinkedList.remove(2).value);
         System.out.println("LL after remove() of last node:");
+        myLinkedList.printList();
+
+        System.out.println("\nReverse Linked List");
+        myLinkedList.reverse();
         myLinkedList.printList();
 
 
@@ -59,6 +63,10 @@ public class LinkedListMain {
             LL after remove() of last node:
             2
             4
+
+            Reverse Linked List
+            4
+            2
 
         */
 

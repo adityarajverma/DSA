@@ -29,13 +29,28 @@ public class LinkedList
         this.length=1;
     }
 
-    public void printList()
-    {
-        Node temp= head;
-        while(temp!=null)
-        {
+    public void printList() {
+        Node temp = head;
+        while (temp != null) {
             System.out.println(temp.value);
-            temp=temp.next;
+            temp = temp.next;
+        }
+    }
+
+    public void printAll() {
+        if (length == 0) {
+            System.out.println("Head: null");
+            System.out.println("Tail: null");
+        } else {
+            System.out.println("Head: " + head.value);
+            System.out.println("Tail: " + tail.value);
+        }
+        System.out.println("Length:" + length);
+        System.out.println("\nLinked List:");
+        if (length == 0) {
+            System.out.println("empty");
+        } else {
+            printList();
         }
     }
 
@@ -177,7 +192,28 @@ public class LinkedList
         Node temp=pre.next;
         pre.next=temp.next;
         temp.next=null;
+        length--;
         return temp;
+
+    }
+
+    //Reverse Linked List
+    public void reverse()
+    {
+        Node temp= head;
+        head=tail;
+        tail=temp;
+
+        Node before=null;
+        Node after= temp.next;
+
+        for (int i=0;i<length;i++)
+        {
+            after=temp.next;
+            temp.next=before;
+            before=temp;
+            temp=after;
+        }
 
     }
 
