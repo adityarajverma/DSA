@@ -42,6 +42,10 @@ public class LinkedListMain {
         System.out.println("Miidle Node : " +myLinkedList.findMiddleNode().value);
 
 
+        System.out.println("\nFind Kth element Node");
+        System.out.println(myLinkedList.findKthFromEnd(4).value);
+
+
         /*
             EXPECTED OUTPUT:
             ----------------
