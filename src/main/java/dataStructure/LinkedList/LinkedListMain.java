@@ -33,6 +33,15 @@ public class LinkedListMain {
         myLinkedList.printList();
 
 
+        System.out.println("\nFind Middle Node");
+        myLinkedList.append(6);
+        myLinkedList.append(3);
+        myLinkedList.append(4);
+        System.out.println("Print All list before finding middle Node");
+        myLinkedList.printAll();
+        System.out.println("Miidle Node : " +myLinkedList.findMiddleNode().value);
+
+
         /*
             EXPECTED OUTPUT:
             ----------------
