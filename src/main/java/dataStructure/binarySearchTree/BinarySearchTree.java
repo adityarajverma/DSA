@@ -1,4 +1,4 @@
-package dataStructure.DoubleLinkedList.binarySearchTree;
+package dataStructure.binarySearchTree;
 
 public class BinarySearchTree {
 
