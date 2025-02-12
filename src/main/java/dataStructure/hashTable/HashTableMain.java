@@ -12,7 +12,7 @@ public class HashTableMain {
         myHashTable.set("tile", 50);
         myHashTable.set("lumber", 80);
 
-        System.out.println( myHashTable.keys() );
+        System.out.println(myHashTable.keys());
 
     	/*
         	EXPECTED OUTPUT:
